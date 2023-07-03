@@ -1,3 +1,27 @@
+:root {
+    /* fonts */
+    --font-inter: Inter;
+
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-11xl: 30px;
+    --font-size-mini: 15px;
+    --font-size-xl: 20px;
+    --font-size-smi: 13px;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-mediumpurple: #9885fa;
+    --color-tomato: #fc4545;
+    --color-limegreen: #58b61f;
+    --color-gray-100: #20232f;
+
+    /* border radiuses */
+    --br-9xl: 28px;
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +41,7 @@ body {
     width: 100%;
     height: 100%;
     min-height: 82vh;
+    max-width: 100%;
     background: url(../Images/98@3x.png);
     background-size: cover;
     background-position: center;
@@ -34,6 +59,8 @@ body {
     overflow: hidden;
     border: 2px solid #323746;
     border-radius: 0px 60px 60px 0px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .side-panal a {
@@ -45,12 +72,14 @@ body {
     border-bottom: 1px solid #414141;
     margin-left: 10px;
 }
-.side-panal img{
+
+.side-panal img {
     filter: grayscale(100%);
-    transition: transform 0.5s;  
+    transition: transform 0.5s;
 }
-.side-panal img:hover{
-    filter:grayscale(0%) ;
+
+.side-panal img:hover {
+    filter: grayscale(0%);
     transform: translateY(-5px)
 }
 
@@ -75,6 +104,9 @@ nav ul li a {
 .footer {
     background-color: #272c3a;
     height: 179px;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 .event-log {
@@ -92,6 +124,7 @@ nav ul li a {
     left: 200px;
     width: 388px;
     height: 48px;
+
 }
 
 .home-parent h2,
@@ -152,6 +185,7 @@ h5 {
     left: 1096px;
     width: 100%;
     height: 100px;
+
 }
 
 .arm-mode h5 {
@@ -279,19 +313,50 @@ h5 {
 
 /* dragger */
 /* card */
-.main-req {
-    position: relative;
-    left: 10px;
-    border-radius: 28px;
-    background-color: #20232f;
+
+.group-wrapper {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    width: 1550px;
+    height: 270px;
+    overflow-x: auto;
+}
+
+.location h2 {
+    position: absolute;
+    top: 450px;
+    left: 239px;
+    font-size: 25px;
+    display: inline-block;
+    width: 162px;
+    height: 27px;
+}
+
+/* element1 */
+
+.bg-2-image,
+.frame-container,
+.frame-div {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 482px;
     height: 250px;
     overflow: hidden;
-    display: inline-flex;
-    margin-top: 15px;
 }
 
-.armd-unarmd {
+.group-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-9xl);
+    background-color: var(--color-gray-100);
+    width: 482px;
+    height: 250px;
+}
+
+.ellipse-parent {
     position: absolute;
     top: 23px;
     left: 21px;
@@ -299,519 +364,1015 @@ h5 {
     height: 24px;
 }
 
-.armd-unarmd .green-cir {
+.ellipse-div {
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 50%;
-    background-color: #58b61f;
+    background-color: var(--color-limegreen);
     width: 24px;
     height: 24px;
 }
 
-.armd-unarmd h2 {
+.group-child1 {
     position: absolute;
-    top: 3px;
-    left: 8px;
-    width: 10px;
-    height: 17px;
-    font-size: 15px;
-
-}
-
-.armd-unarmd h3 {
-    position: absolute;
-    top: 3px;
-    left: 30px;
-    display: inline-block;
-    width: 48px;
-    height: 19px;
-}
-
-.armd-unarmd1 .red-cir {
-    position: absolute;
-    top: 24px;
-    left: 125px;
+    top: 0;
+    left: 0;
     border-radius: 50%;
-    background-color: #fc4545;
     width: 24px;
     height: 24px;
+    left: 80px;
+    background-color: var(--color-tomato);
 }
 
-.armd-unarmd1 h2 {
+.armed,
+.div,
+.div1,
+.unarmed {
     position: absolute;
-    top: 27px;
-    left: 132px;
-    width: 10px;
-    height: 17px;
-    font-size: 15px;
-}
-
-.armd-unarmd1 h3 {
-    position: absolute;
-    top: 26px;
-    left: 155px;
+    top: 3px;
+    left: 27px;
     display: inline-block;
     width: 48px;
     height: 19px;
 }
 
-.inner-text h2 {
+.div,
+.div1,
+.unarmed {
+    top: 4px;
+    left: 7px;
+    width: 10px;
+    height: 17px;
+}
+
+.div1,
+.unarmed {
+    left: 88px;
+}
+
+.unarmed {
+    top: 3px;
+    left: 108px;
+    width: 70px;
+    height: 19px;
+}
+
+.devices,
+.living-room {
     position: absolute;
     top: 120px;
     left: 29px;
-    font-size: 30px;
+    font-size: var(--font-size-11xl);
     display: inline-block;
     width: 185px;
     height: 40px;
 }
 
-.inner-text h3 {
-    position: absolute;
-    top: 160px;
-    left: 30px;
-    font-size: 15px;
-    display: inline-block;
-    width: 185px;
-    height: 40px;
+.devices {
+    top: 169px;
+    font-size: var(--font-size-base);
+    width: 90px;
+    height: 24px;
+    color: var(--color-mediumpurple);
 }
 
-.inner-text span {
-    color: #9885fa;
-    ;
-}
-
-.main-req .inner-img {
+.bg-4-image {
     position: absolute;
     top: 45px;
     left: 214px;
     width: 450px;
     height: 267px;
+    object-fit: cover;
 }
 
-.group-wrapper {
+/* element2 */
+.frame-wrapper1 {
     position: absolute;
-    top: 470px;
-    left: 220px;
-    width: 1720px;
-    height: 270px;
-    overflow-x: auto;
+    top: 0;
+    left: 524px;
+    width: 482px;
+    height: 250px;
 }
+
+.bg-2-image {
+    left: 164px;
+    width: 463px;
+    height: 302px;
+    object-fit: cover;
+}
+
+/* element3 */
+.bg-3-image {
+    position: absolute;
+    top: 0;
+    left: 214px;
+    width: 415px;
+    height: 277px;
+    object-fit: cover;
+}
+
+.group-parent2 {
+    position: absolute;
+    top: 0;
+    left: 1048px;
+    width: 482px;
+    height: 250px;
+    overflow: hidden;
+}
+
+/* element4 */
+.bg-5-image,
+.frame-wrapper2 {
+    position: absolute;
+    top: 2px;
+    left: 1550px;
+    width: 482px;
+    height: 250px;
+}
+
+/* element5 */
+.bg-5-image {
+    top: -11px;
+    left: 164px;
+    width: 463px;
+    height: 302px;
+    object-fit: cover;
+}
+
+.frame-wrapper3 {
+    position: absolute;
+    top: 2px;
+    left: 2074px;
+    width: 482px;
+    height: 250px;
+}
+
+/* element6 */
+.group-parent5 {
+    position: absolute;
+    top: 2px;
+    left: 2598px;
+    width: 482px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.bg-6-image {
+    position: absolute;
+    top: -14px;
+    left: 214px;
+    width: 415px;
+    height: 277px;
+    object-fit: cover;
+}
+
+
+
+
 
 /* mediaquary */
-
-@media (max-width: 480px) {
-
-
+@media(min-width: 1400px) and (max-width: 1700px) {
     .hero {
         /* background image */
-        width: 260%;
-        height: 100%;
-        min-height: 220vh;
-        background: url(../Images/98@3x1.png);
+        width: auto;
+        height: auto;
         background-size: cover;
-        background-position: center;
-        position: relative;
     }
-
-    .side-panal {
-        position: absolute;
-        top: 22%;
-        bottom: 0;
-        height: 60%;
-        left: 0;
-        background: #272C3A;
-        width: 140px;
-        overflow: hidden;
-        border: 2px solid #323746;
-        border-radius: 0px 60px 60px 0px;
-    }
-
-    .side-panal a {
-        position: relative;
-        display: table;
-        width: 1000px;
-        padding-top: 70px;
-        border-bottom: 1px solid #414141;
-        margin-left: 10px;
-
-    }
-
-    .side-panal img {
-        width: 60px;
-    }
-
-    .footer {
-        position: absolute;
-        background-color: #272c3a;
-        height: 500px;
-        width: 1250px;
-    }
-
-    /* event log media quaery */
-    .event-log {
-        position: absolute;
-        top: 6%;
-        left: 100px;
-        font-size: 50px;
-        display: inline-block;
-        width: 300px;
-        height: 30px;
-    }
-
-    .home-parent {
-        position: absolute;
-        top: 25%;
-        left: 100px;
-        width: 500px;
-        height: 120px;
-
-    }
-
-    .home-parent h2 {
-        font-size: 40px;
-        margin-left: 70px;
-        margin-top: 20px;
-    }
-
-    .home-parent h5 {
-        font-size: 20px;
-        margin-left: 70px;
-    }
-
-    .home-parent .forma-1-1 {
-        width: 50px;
-        height: 100px;
-    }
-
-    .home-parent1 {
-        position: absolute;
-        top: 25%;
-        left: 690px;
-        width: 500px;
-        height: 120px;
-
-    }
-
-    .home-parent1 h2 {
-        font-size: 40px;
-        margin-left: 70px;
-        margin-top: 20px;
-
-    }
-
-    .home-parent1 h5 {
-        font-size: 20px;
-        margin-left: 70px;
-
-    }
-
-    .home-parent1 .forma-1-1 {
-        width: 50px;
-        height: 100px;
-    }
-
-    .home-parent2 {
-        position: absolute;
-        top: 60%;
-        left: 100px;
-        width: 500px;
-        height: 120px;
-
-    }
-
-    .home-parent2 h2 {
-        font-size: 40px;
-        margin-left: 70px;
-        margin-top: 20px;
-
-    }
-
-    .home-parent2 h5 {
-        font-size: 20px;
-        margin-left: 70px;
-
-    }
-
-    .home-parent2 .forma-1-1 {
-        width: 50px;
-        height: 100px;
-    }
-
-
-
-    .home-parent3 {
-        position: absolute;
-        top: 60%;
-        left: 690px;
-        width: 500px;
-        height: 120px;
-
-    }
-
-    .home-parent3 h2 {
-        font-size: 40px;
-        margin-left: 70px;
-        margin-top: 20px;
-
-    }
-
-    .home-parent3 h5 {
-        font-size: 20px;
-        margin-left: 70px;
-
-    }
-
-    .home-parent3 .forma-1-1 {
-        width: 50px;
-        height: 100px;
-    }
-
-
-    /* group wrapper */
 
     .group-wrapper {
         position: absolute;
-        top: 100%;
-        left: 200px;
-        width: 980px;
-        height: 600px;
+        top: 400px;
+        left: 230px;
+        width: 90%;
+        height: 270px;
+        max-width: 80%;
         overflow-x: auto;
+    }
+
+    .location h2 {
+        top: 350px;
+        left: 239px;
+        font-size: 20px;
 
     }
 
-    .main-req {
-        width: 960px;
-        height: 560px;
+    /* frame bg and width */
+    .frame-container,
+    .frame-div {
+        width: 350px;
+        height: 250px;
         overflow: hidden;
-
     }
 
-    .armd-unarmd {
-        position: absolute;
-        top: 23px;
-        left: 21px;
-        width: 178px;
-        height: 24px;
+    .group-inner {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
     }
 
-    .armd-unarmd .green-cir {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
-        background-color: #58b61f;
-        width: 50px;
-        height: 50px;
+    /* Frame position */
+    .frame-wrapper1 {
+        left: 380px;
+    }
+    .group-parent2 {
+        left: 760px;
     }
 
-    .armd-unarmd h2 {
-        position: absolute;
-        top: 3px;
-        left: 11px;
-        width: 10px;
-        height: 17px;
-        font-size: 40px;
-
+    .frame-wrapper2 {
+        left: 1140px;
     }
 
-    .armd-unarmd h3 {
-        position: absolute;
-        top: 3px;
-        left: 70px;
-        display: inline-block;
-        width: 48px;
-        height: 19px;
-        font-size: 40px;
+    .frame-wrapper3 {
+        left: 1520px;
     }
 
-    .armd-unarmd1 .red-cir {
-        position: absolute;
-        top: 24px;
-        left: 240px;
-        border-radius: 50%;
-        background-color: #fc4545;
-        width: 50px;
-        height: 50px;
+    .group-parent5 {
+        left: 1900px;
     }
 
-    .armd-unarmd1 h2 {
-        position: absolute;
-        top: 27px;
-        left: 250px;
-        width: 10px;
-        height: 17px;
-        font-size: 40px;
-    }
-
-    .armd-unarmd1 h3 {
-        position: absolute;
-        top: 26px;
-        left: 310px;
-        display: inline-block;
-        width: 48px;
-        height: 19px;
-        font-size: 40px;
-    }
-
-    .inner-text h2 {
-        top: 220px;
-        left: 29px;
-        font-size: 60px;
-        width: 430px;
-        height: 40px;
-    }
-
-    .inner-text h3 {
-        top: 310px;
-        left: 30px;
-        font-size: 40px;
-        width: 330px;
-        height: 40px;
-    }
-
-    .inner-text span {
-        color: #9885fa;
-        ;
-    }
-
-    .main-req .inner-img {
-        top: 65px;
-        left: 470px;
-        width: 750px;
-        height: 600px;
-    }
-
-    .Yashi-Container {
-
-        top: 300px;
-        left: 200px;
-        width: 645px;
-        height: 226px;
-        font-size: 40px;
-        color: #67cecd;
-    }
-
-    .Yashi-Container img {
-        top: 0;
-        left: 0;
-        width: 300px;
-        height: 400px;
-        object-fit: cover;
+    .bg-4-image{
+        top: 46px;
+        left: 114px;
 
     }
+    .bg-2-image{
+        top: 25px;
+        left: 114px;
 
-    .Yashi-Container .text-yashi {
-        position: absolute;
-        top: 85px;
-        left: 300px;
-        display: inline-block;
-        width: 600px;
-        height: 131px
     }
-
-    .Yashi-Container h2 {
-        color: #eee;
-        font-size: 70px;
-    }
-
-    .Yashi-Container .text-yashi span {
-        color: #67cecd;
-    }
-
-    .Yashi-Container p {
-        color: #eee;
-        font-size: 50px;
-    }
-
-    .Yashi-Container .text-yashi .not-secured {
-        color: #fc4545;
-    }
-
-    .group-child {
-        left: 1096px;
-        width: 100%;
-        height: 100px;
-    }
-
-    .arm-mode h5 {
-        position: absolute;
+    .bg-3-image{
         top: 40px;
-        left: 10px;
-        display: inline-block;
-        width: 300px;
-        height: 30px;
-        font-size: 40px;
+        left: 130px;
+
+    }
+    .bg-5-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-6-image{
+        top: 40px;
+        left: 114px;
+
+    }
+    .arm-mode h5 {
+        left: 60%;
     }
 
     .arm-mode img {
-        position: absolute;
-        top: 30px;
-        left: 180px;
-        display: inline-block;
-        width: 200px;
-        height: 50px;
+        left: 66%;
     }
 
     .sub {
-        position: absolute;
-        top: 40px;
-        left: 320px;
-        display: inline-block;
-        width: 103px;
-        height: 30px;
-        font-size: 40px;
-        color: #58B61F;
+        left: 71%;
     }
 
     .System-stat h5 {
-        position: absolute;
-        top: 38px;
-        left: 380px;
-        display: inline-block;
-        width: 300px;
-        height: 30px;
-        font-size: 40px;
+        left: 72%;
     }
 
     .System-stat img {
-        position: absolute;
-        top: 30px;
-        left: 820px;
-        display: inline-block;
-        width: 200px;
-        height: 50px;
+        left: 85%;
     }
 
     .System-stat .sub1 {
-        position: absolute;
-        top: 38px;
-        left: 680px;
-        display: inline-block;
-        width: 300px;
-        height: 30px;
-        font-size: 40px;
-        color: #58B61F;
+        left: 81%;
     }
-
     .log-out h5 {
-        position: absolute;
-        top: 38px;
-        left: 980px;
-        display: inline-block;
-        width: 103px;
-        height: 30px;
-        font-size: 40px;
-
+        left: 90%;
     }
-
     .log-out img {
-        position: absolute;
-        top: 30px;
-        left: 1150px;
-        display: inline-block;
-        width: 100px;
-        height: 50px;
+        left: 94%;
+        width: 5%;
     }
+
+    .event-log {
+        top: 790px;
+        left: 198px;
+    }
+
+    .home-parent {
+        top: 830px;
+        left: 150px;
+    }
+
+    .home-parent1 {
+        top: 830px;
+        left: 32%;
+    }
+
+    .home-parent2 {
+        top: 830px;
+        left: 56%;
+    }
+
+    .home-parent3 {
+        top: 830px;
+        left: 79%;
+        width: 280px;
+    }
+    .footer {
+        height: 179px;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .side-panal a{
+        font-size: 35px;
+    }
+    .side-panal img{
+        width: 22px;
+    } 
+
+}
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .hero {
+        /* background image */
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+
+    .group-wrapper {
+        position: absolute;
+        top: 400px;
+        left: 150px;
+        width: 90%;
+        height: 270px;
+        max-width: 80%;
+        overflow-x: auto;
+    }
+
+    .location h2 {
+        top: 350px;
+        left: 239px;
+        font-size: 20px;
+
+    }
+
+    /* frame bg and width */
+    .frame-container,
+    .frame-div {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .group-inner {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    /* Frame position */
+    .frame-wrapper1 {
+        left: 380px;
+    }
+    .group-parent2 {
+        left: 760px;
+    }
+
+    .frame-wrapper2 {
+        left: 1140px;
+    }
+
+    .frame-wrapper3 {
+        left: 1520px;
+    }
+
+    .group-parent5 {
+        left: 1900px;
+    }
+
+    .bg-4-image{
+        top: 46px;
+        left: 114px;
+
+    }
+    .bg-2-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-3-image{
+        top: 40px;
+        left: 130px;
+
+    }
+    .bg-5-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-6-image{
+        top: 40px;
+        left: 114px;
+
+    }
+    .arm-mode h5 {
+        left: 44%;
+    }
+
+    .arm-mode img {
+        left: 52%;
+    }
+
+    .sub {
+        left: 60%;
+    }
+
+    .System-stat h5 {
+        left: 60%;
+    }
+
+    .System-stat img {
+        left: 79%;
+    }
+
+    .System-stat .sub1 {
+        left: 73%;
+    }
+    .log-out h5 {
+        left: 85%;
+    }
+    .log-out img {
+        left: 94%;
+        width: 5%;
+    }
+
+    .event-log {
+        top: 790px;
+        left: 130px;
+    }
+
+    .home-parent {
+        top: 830px;
+        left: 7%;
+        font-size: 12px;
+    }
+
+    .home-parent1 {
+        top: 830px;
+        left: 31%;
+        font-size: 12px;
+    }
+
+    .home-parent2 {
+        top: 830px;
+        left: 54%;
+        font-size: 12px;
+    }
+
+    .home-parent3 {
+        top: 830px;
+        left: 77%;
+        width: 22%;
+        font-size: 12px;
+    }
+    .footer {
+        height: 179px;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .side-panal a{
+        font-size: 35px;
+    }
+    .side-panal img{
+        width: 22px;
+    } 
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero {
+        /* background image */
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+
+    .group-wrapper {
+        position: absolute;
+        top: 400px;
+        left: 150px;
+        width: 90%;
+        height: 270px;
+        max-width: 80%;
+        overflow-x: auto;
+    }
+    .Yashi-Container{
+        top: 116px;
+        left: 135px;
+        width: 500px;
+
+    }
+    .Yashi-Container .text-yashi{
+        width: 300px;
+    }
+    .location h2 {
+        top: 350px;
+        left: 170px;
+        font-size: 20px;
+
+    }
+    /* frame bg and width */
+    .frame-container,
+    .frame-div {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .group-inner {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    /* Frame position */
+    .frame-wrapper1 {
+        left: 380px;
+    }
+    .group-parent2 {
+        left: 760px;
+    }
+
+    .frame-wrapper2 {
+        left: 1140px;
+    }
+
+    .frame-wrapper3 {
+        left: 1520px;
+    }
+
+    .group-parent5 {
+        left: 1900px;
+    }
+
+    .bg-4-image{
+        top: 46px;
+        left: 114px;
+
+    }
+    .bg-2-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-3-image{
+        top: 40px;
+        left: 130px;
+
+    }
+    .bg-5-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-6-image{
+        top: 40px;
+        left: 114px;
+
+    }
+    .arm-mode h5 {
+        left: 28%;
+    }
+
+    .arm-mode img {
+        left: 39%;
+    }
+
+    .sub {
+        left: 49%;
+    }
+
+    .System-stat h5 {
+        left: 49%;
+    }
+
+    .System-stat img {
+        left: 74%;
+    }
+
+    .System-stat .sub1 {
+        left: 66%;
+    }
+    .log-out h5 {
+        left: 82%;
+        width: 5%;
+    }
+    .log-out img {
+        left: 94%;
+        width: 5%;
+    }
+
+    .event-log {
+        top: 790px;
+        left: 130px;
+    }
+
+    .home-parent {
+        top: 830px;
+        left: 15%;
+        font-size: 12px;
+    }
+
+    .home-parent1 {
+        top: 890px;
+        left: 15%;
+        font-size: 12px;
+    }
+
+    .home-parent2 {
+        top: 880px;
+        left: 63%;
+        font-size: 12px;
+        width: 30%;
+    }
+
+    .home-parent3 {
+        top: 830px;
+        left: 63%;
+        width: 30%;
+        font-size: 12px;
+    }
+    .footer {
+        height: 179px;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .side-panal a{
+        font-size: 35px;
+    }
+    .side-panal img{
+        width: 22px;
+    } 
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero {
+        /* background image */
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+
+    .group-wrapper {
+        position: absolute;
+        top: 400px;
+        left: 110px;
+        width: 90%;
+        height: 270px;
+        max-width: 80%;
+        overflow-x: auto;
+    }
+    .Yashi-Container img{
+        width: 150px;
+        height: 150px;   
+    }
+    .Yashi-Container{
+        top: 116px;
+        left: 80px;
+        width: 500px;
+
+    }
+    .Yashi-Container .text-yashi{
+        width: 300px;
+        top: 20px;
+        left: 150px;
+    }
+    .location h2 {
+        top: 350px;
+        left: 120px;
+        font-size: 20px;
+
+    }
+    /* frame bg and width */
+    .frame-container,
+    .frame-div {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .group-inner {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    /* Frame position */
+    .frame-wrapper1 {
+        left: 380px;
+    }
+    .group-parent2 {
+        left: 760px;
+    }
+
+    .frame-wrapper2 {
+        left: 1140px;
+    }
+
+    .frame-wrapper3 {
+        left: 1520px;
+    }
+
+    .group-parent5 {
+        left: 1900px;
+    }
+
+    .bg-4-image{
+        top: 46px;
+        left: 114px;
+
+    }
+    .bg-2-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-3-image{
+        top: 40px;
+        left: 130px;
+
+    }
+    .bg-5-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-6-image{
+        top: 40px;
+        left: 114px;
+
+    }
+    .arm-mode h5 {
+        left: 4%;
+    }
+
+    .arm-mode img {
+        left: 17%;
+    }
+
+    .sub {
+        left: 30%;
+    }
+
+    .System-stat h5 {
+        left: 30%;
+    }
+
+    .System-stat img {
+        left: 63%;
+    }
+
+    .System-stat .sub1 {
+        left: 53%;
+    }
+    .log-out h5 {
+        left: 73%;
+        width: 5%;
+    }
+    .log-out img {
+        left: 90%;
+        width: 5%;
+    }
+
+    .event-log {
+        top: 790px;
+        left: 130px;
+    }
+
+    .home-parent {
+        top: 830px;
+        left: 15%;
+        font-size: 12px;
+    }
+
+    .home-parent1 {
+        top: 890px;
+        left: 15%;
+        font-size: 12px;
+    }
+
+    .home-parent2 {
+        top: 880px;
+        left: 57%;
+        font-size: 12px;
+        width: 40%;
+    }
+
+    .home-parent3 {
+        top: 830px;
+        left: 57%;
+        width: 40%;
+        font-size: 12px;
+    }
+    .footer {
+        height: 179px;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .side-panal {
+        width: 67px;
+        height: 85%;
+
+    }
+    .side-panal a{
+        font-size: 38px;
+        margin-left: 1px;
+        padding: 15px;
+    }
+    .side-panal img{
+        width: 20px;
+    } 
+
+}
+
+@media (max-width: 575.98px) {
+    .hero {
+        /* background image */
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+
+    .group-wrapper {
+        position: absolute;
+        top: 400px;
+        left: 110px;
+        width: 90%;
+        height: 270px;
+        max-width: 80%;
+        overflow-x: auto;
+    }
+    .Yashi-Container img{
+        width: 150px;
+        height: 150px;   
+    }
+    .Yashi-Container{
+        top: 116px;
+        left: 80px;
+        width: 500px;
+
+    }
+    .Yashi-Container .text-yashi{
+        width: 300px;
+        top: 20px;
+        left: 150px;
+    }
+    .location h2 {
+        top: 350px;
+        left: 120px;
+        font-size: 20px;
+
+    }
+    /* frame bg and width */
+    .frame-container,
+    .frame-div {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .group-inner {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    /* Frame position */
+    .frame-wrapper1 {
+        left: 380px;
+    }
+    .group-parent2 {
+        left: 760px;
+    }
+
+    .frame-wrapper2 {
+        left: 1140px;
+    }
+
+    .frame-wrapper3 {
+        left: 1520px;
+    }
+
+    .group-parent5 {
+        left: 1900px;
+    }
+
+    .bg-4-image{
+        top: 46px;
+        left: 114px;
+
+    }
+    .bg-2-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-3-image{
+        top: 40px;
+        left: 130px;
+
+    }
+    .bg-5-image{
+        top: 25px;
+        left: 114px;
+
+    }
+    .bg-6-image{
+        top: 40px;
+        left: 114px;
+
+    }
+    .arm-mode h5 {
+        left: 4%;
+    }
+
+    .arm-mode img {
+        left: 17%;
+    }
+
+    .sub {
+        left: 30%;
+    }
+
+    .System-stat h5 {
+        left: 30%;
+    }
+
+    .System-stat img {
+        left: 63%;
+    }
+
+    .System-stat .sub1 {
+        left: 53%;
+    }
+    .log-out h5 {
+        left: 73%;
+        width: 5%;
+    }
+    .log-out img {
+        left: 90%;
+        width: 5%;
+    }
+
+    .event-log {
+        top: 790px;
+        left: 130px;
+    }
+
+    .home-parent {
+        top: 830px;
+        left: 15%;
+        font-size: 12px;
+    }
+
+    .home-parent1 {
+        top: 890px;
+        left: 15%;
+        font-size: 12px;
+    }
+
+    .home-parent2 {
+        top: 880px;
+        left: 57%;
+        font-size: 12px;
+        width: 40%;
+    }
+
+    .home-parent3 {
+        top: 830px;
+        left: 57%;
+        width: 40%;
+        font-size: 12px;
+    }
+    .footer {
+        height: 179px;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .side-panal {
+        width: 67px;
+        height: 85%;
+
+    }
+    .side-panal a{
+        font-size: 38px;
+        margin-left: 1px;
+        padding: 15px;
+    }
+    .side-panal img{
+        width: 20px;
+    } 
+
 
 }
