@@ -321,6 +321,7 @@ h5 {
     width: 1550px;
     height: 270px;
     overflow-x: auto;
+    grid-template-columns: auto auto auto;
 }
 
 .location h2 {
@@ -542,80 +543,83 @@ h5 {
 
     .group-wrapper {
         position: absolute;
-        top: 400px;
-        left: 230px;
+        top: 25rem;
+        left: 14.375rem;
         width: 90%;
-        height: 270px;
+        height: 16.875rem;
         max-width: 80%;
         overflow-x: auto;
+        grid-template-columns: auto auto auto;
     }
 
     .location h2 {
-        top: 350px;
-        left: 239px;
-        font-size: 20px;
-
+        top: 21.875rem;
+        left: 14.9375rem;
+        font-size: 1.25rem;
     }
+
 
     /* frame bg and width */
     .frame-container,
     .frame-div {
-        width: 350px;
-        height: 250px;
-        overflow: hidden;
+        width: 21.875rem;
+        height: 15.625rem;
     }
 
     .group-inner {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem;
+        height: 15.625rem;
         overflow: hidden;
     }
 
+
     /* Frame position */
     .frame-wrapper1 {
-        left: 380px;
+        left: 23.75rem;
     }
+
     .group-parent2 {
-        left: 760px;
+        left: 47.5rem;
     }
 
     .frame-wrapper2 {
-        left: 1140px;
+        left: 71.25rem;
     }
 
     .frame-wrapper3 {
-        left: 1520px;
+        left: 95rem;
     }
 
     .group-parent5 {
-        left: 1900px;
+        left: 118.75rem;
     }
 
-    .bg-4-image{
-        top: 46px;
-        left: 114px;
-
+    .bg-4-image {
+        top: 4.6rem;
+        left: 7.125rem;
     }
-    .bg-2-image{
-        top: 25px;
-        left: 114px;
 
+    .bg-2-image {
+        top: 2.5rem;
+        left: 7.125rem;
     }
-    .bg-3-image{
-        top: 40px;
-        left: 130px;
 
+    .bg-3-image {
+        top: 3.5rem;
+        left: 7.8125rem;
     }
-    .bg-5-image{
-        top: 25px;
-        left: 114px;
 
+    .bg-5-image {
+        top: 2.5rem;
+        left: 7.125rem;
     }
-    .bg-6-image{
-        top: 40px;
-        left: 114px;
 
+    .bg-6-image {
+        top: 3.5rem;
+        left: 7.125rem;
     }
+
+
     .arm-mode h5 {
         left: 60%;
     }
@@ -639,52 +643,56 @@ h5 {
     .System-stat .sub1 {
         left: 81%;
     }
+
     .log-out h5 {
-        left: 90%;
+        left: 89%;
     }
+
     .log-out img {
         left: 94%;
         width: 5%;
     }
 
     .event-log {
-        top: 790px;
-        left: 198px;
+        top: 49.375rem; 
+        left: 12.375rem; 
     }
-
+    
     .home-parent {
-        top: 830px;
-        left: 150px;
+        top: 51.875rem; 
+        left: 9.375rem; 
     }
-
+    
     .home-parent1 {
-        top: 830px;
-        left: 32%;
+        top: 51.875rem; 
+        left: 32%; 
     }
-
+    
     .home-parent2 {
-        top: 830px;
-        left: 56%;
+        top: 51.875rem; 
+        left: 56%; 
     }
-
+    
     .home-parent3 {
-        top: 830px;
-        left: 79%;
-        width: 280px;
+        top: 51.875rem;
+        left: 79%; 
+        width: 17.5rem; 
     }
+    
     .footer {
-        height: 179px;
+        height: 11.1875rem; 
         width: auto;
         max-width: 100%;
         max-height: 100%;
     }
-    .side-panal a{
-        font-size: 35px;
+    
+    .side-panal a {
+        font-size: 2.1875rem; 
     }
-    .side-panal img{
-        width: 22px;
-    } 
-
+    
+    .side-panal img {
+        width: 1.375rem; 
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1399.98px) {
@@ -694,83 +702,86 @@ h5 {
         height: auto;
         background-size: cover;
     }
-
+    
     .group-wrapper {
         position: absolute;
-        top: 400px;
-        left: 150px;
+        top: 25rem; 
+        left: 9.375rem; 
         width: 90%;
-        height: 270px;
+        height: 16.875rem; 
         max-width: 80%;
         overflow-x: auto;
+        grid-template-columns: auto auto auto;
     }
-
+    
     .location h2 {
-        top: 350px;
-        left: 239px;
-        font-size: 20px;
-
+        top: 21.875rem; 
+        left: 14.9375rem; 
+        font-size: 1.25rem; 
     }
-
+    
     /* frame bg and width */
     .frame-container,
     .frame-div {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem; 
+        height: 15.625rem; 
         overflow: hidden;
     }
-
+    
     .group-inner {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem; 
+        height: 15.625rem; 
         overflow: hidden;
     }
+    
 
-    /* Frame position */
-    .frame-wrapper1 {
-        left: 380px;
-    }
-    .group-parent2 {
-        left: 760px;
-    }
+/* Frame position */
+.frame-wrapper1 {
+    left: 23.75rem; 
+}
 
-    .frame-wrapper2 {
-        left: 1140px;
-    }
+.group-parent2 {
+    left: 47.5rem; 
+}
 
-    .frame-wrapper3 {
-        left: 1520px;
-    }
+.frame-wrapper2 {
+    left: 71.25rem; 
+}
 
-    .group-parent5 {
-        left: 1900px;
-    }
+.frame-wrapper3 {
+    left: 95rem; 
+}
 
-    .bg-4-image{
-        top: 46px;
-        left: 114px;
+.group-parent5 {
+    left: 118.75rem; 
+}
 
-    }
-    .bg-2-image{
-        top: 25px;
-        left: 114px;
+.bg-4-image {
+    top: 2.875rem; 
+    left: 7.125rem; 
+}
 
-    }
-    .bg-3-image{
-        top: 40px;
-        left: 130px;
+.bg-2-image {
+    top: 1.5625rem; 
+    left: 7.125rem; 
+}
 
-    }
-    .bg-5-image{
-        top: 25px;
-        left: 114px;
+.bg-3-image {
+    top: 2.5rem; 
+    left: 8.125rem; 
+}
 
-    }
-    .bg-6-image{
-        top: 40px;
-        left: 114px;
+.bg-5-image {
+    top: 1.5625rem; 
+    left: 7.125rem; 
+}
 
-    }
+.bg-6-image {
+    top: 2.5rem; 
+    left: 7.125rem;
+}
+
+
     .arm-mode h5 {
         left: 44%;
     }
@@ -794,55 +805,61 @@ h5 {
     .System-stat .sub1 {
         left: 73%;
     }
+
     .log-out h5 {
         left: 85%;
     }
+
     .log-out img {
         left: 94%;
         width: 5%;
     }
 
     .event-log {
-        top: 790px;
-        left: 130px;
+        top: 49.375rem; 
+        left: 8.125rem; 
     }
-
+    
     .home-parent {
-        top: 830px;
-        left: 7%;
-        font-size: 12px;
+        top: 51.875rem; 
+        left: 7%; 
+        font-size: 0.75rem; 
     }
 
     .home-parent1 {
-        top: 830px;
+        top: 51.875rem;
         left: 31%;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
-
+    
     .home-parent2 {
-        top: 830px;
+        top: 51.875rem;
         left: 54%;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
-
+    
     .home-parent3 {
-        top: 830px;
-        left: 77%;
+        top: 51.875rem; 
+        left: 77%; 
         width: 22%;
-        font-size: 12px;
+        font-size: 0.75rem; 
     }
+    
     .footer {
-        height: 179px;
+        height: 11.1875rem; 
         width: auto;
         max-width: 100%;
         max-height: 100%;
     }
-    .side-panal a{
-        font-size: 35px;
+    
+    .side-panal a {
+        font-size: 2.1875rem; 
     }
-    .side-panal img{
-        width: 22px;
-    } 
+    
+    .side-panal img {
+        width: 1.375rem; 
+    }
+    
 
 }
 
@@ -857,87 +874,93 @@ h5 {
 
     .group-wrapper {
         position: absolute;
-        top: 400px;
-        left: 150px;
+        top: 25rem; /* 400px / 16 = 25rem */
+        left: 9.375rem; /* 150px / 16 = 9.375rem */
         width: 90%;
-        height: 270px;
+        height: 16.875rem; /* 270px / 16 = 16.875rem */
         max-width: 80%;
         overflow-x: auto;
+        grid-template-columns: auto auto;
     }
-    .Yashi-Container{
-        top: 116px;
-        left: 135px;
-        width: 500px;
-
+    
+    .Yashi-Container {
+        top: 7.25rem; /* 116px / 16 = 7.25rem */
+        left: 8.4375rem; /* 135px / 16 = 8.4375rem */
+        width: 31.25rem; /* 500px / 16 = 31.25rem */
     }
-    .Yashi-Container .text-yashi{
-        width: 300px;
+    
+    .Yashi-Container .text-yashi {
+        width: 18.75rem; /* 300px / 16 = 18.75rem */
     }
+    
     .location h2 {
-        top: 350px;
-        left: 170px;
-        font-size: 20px;
-
+        top: 21.875rem; /* 350px / 16 = 21.875rem */
+        left: 10.625rem; /* 170px / 16 = 10.625rem */
+        font-size: 1.25rem; /* 20px / 16 = 1.25rem */
     }
+    
     /* frame bg and width */
     .frame-container,
     .frame-div {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem; /* 350px / 16 = 21.875rem */
+        height: 15.625rem; /* 250px / 16 = 15.625rem */
         overflow: hidden;
     }
-
+    
     .group-inner {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem; /* 350px / 16 = 21.875rem */
+        height: 15.625rem; /* 250px / 16 = 15.625rem */
         overflow: hidden;
     }
+    
 
-    /* Frame position */
-    .frame-wrapper1 {
-        left: 380px;
-    }
-    .group-parent2 {
-        left: 760px;
-    }
+/* Frame position */
+.frame-wrapper1 {
+    left: 23.75rem; /* 380px / 16 = 23.75rem */
+}
 
-    .frame-wrapper2 {
-        left: 1140px;
-    }
+.group-parent2 {
+    left: 47.5rem; /* 760px / 16 = 47.5rem */
+}
 
-    .frame-wrapper3 {
-        left: 1520px;
-    }
+.frame-wrapper2 {
+    left: 71.25rem; /* 1140px / 16 = 71.25rem */
+}
 
-    .group-parent5 {
-        left: 1900px;
-    }
+.frame-wrapper3 {
+    left: 95rem; /* 1520px / 16 = 95rem */
+}
 
-    .bg-4-image{
-        top: 46px;
-        left: 114px;
+.group-parent5 {
+    left: 118.75rem; /* 1900px / 16 = 118.75rem */
+}
 
-    }
-    .bg-2-image{
-        top: 25px;
-        left: 114px;
+.bg-4-image {
+    top: 2.875rem; /* 46px / 16 = 2.875rem */
+    left: 7.125rem; /* 114px / 16 = 7.125rem */
+}
 
-    }
-    .bg-3-image{
-        top: 40px;
-        left: 130px;
+.bg-2-image {
+    top: 1.5625rem; /* 25px / 16 = 1.5625rem */
+    left: 7.125rem; /* 114px / 16 = 7.125rem */
+}
 
-    }
-    .bg-5-image{
-        top: 25px;
-        left: 114px;
+.bg-3-image {
+    top: 2.5rem; /* 40px / 16 = 2.5rem */
+    left: 8.125rem; /* 130px / 16 = 8.125rem */
+}
 
-    }
-    .bg-6-image{
-        top: 40px;
-        left: 114px;
+.bg-5-image {
+    top: 1.5625rem; /* 25px / 16 = 1.5625rem */
+    left: 7.125rem; /* 114px / 16 = 7.125rem */
+}
 
-    }
+.bg-6-image {
+    top: 2.5rem; /* 40px / 16 = 2.5rem */
+    left: 7.125rem; /* 114px / 16 = 7.125rem */
+}
+
+
     .arm-mode h5 {
         left: 28%;
     }
@@ -961,57 +984,63 @@ h5 {
     .System-stat .sub1 {
         left: 66%;
     }
+
     .log-out h5 {
         left: 82%;
         width: 5%;
     }
+
     .log-out img {
         left: 94%;
         width: 5%;
     }
 
     .event-log {
-        top: 790px;
-        left: 130px;
+        top: 49.375rem; /* 790px / 16 = 49.375rem */
+        left: 8.125rem; /* 130px / 16 = 8.125rem */
     }
-
+    
     .home-parent {
-        top: 830px;
-        left: 15%;
-        font-size: 12px;
+        top: 51.875rem; /* 830px / 16 = 51.875rem */
+        left: 15%; /* Ignored for conversion since it's a percentage value */
+        font-size: 0.75rem; /* 12px / 16 = 0.75rem */
     }
-
+    
     .home-parent1 {
-        top: 890px;
-        left: 15%;
-        font-size: 12px;
+        top: 55.625rem; /* 890px / 16 = 55.625rem */
+        left: 15%; /* Ignored for conversion since it's a percentage value */
+        font-size: 0.75rem; /* 12px / 16 = 0.75rem */
     }
-
+    
     .home-parent2 {
-        top: 880px;
-        left: 63%;
-        font-size: 12px;
-        width: 30%;
+        top: 55rem; /* 880px / 16 = 55rem */
+        left: 63%; /* Ignored for conversion since it's a percentage value */
+        font-size: 0.75rem; /* 12px / 16 = 0.75rem */
+        width: 18.75rem; /* 30% is converted to rem based on the parent container width */
     }
-
+    
     .home-parent3 {
-        top: 830px;
-        left: 63%;
-        width: 30%;
-        font-size: 12px;
+        top: 51.875rem; /* 830px / 16 = 51.875rem */
+        left: 63%; /* Ignored for conversion since it's a percentage value */
+        width: 18.75rem; /* 30% is converted to rem based on the parent container width */
+        font-size: 0.75rem; /* 12px / 16 = 0.75rem */
     }
+    
     .footer {
-        height: 179px;
+        height: 11.1875rem; /* 179px / 16 = 11.1875rem */
         width: auto;
         max-width: 100%;
         max-height: 100%;
     }
-    .side-panal a{
-        font-size: 35px;
+    
+    .side-panal a {
+        font-size: 2.1875rem; /* 35px / 16 = 2.1875rem */
     }
-    .side-panal img{
-        width: 22px;
-    } 
+    
+    .side-panal img {
+        width: 1.375rem; /* 22px / 16 = 1.375rem */
+    }
+    
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1021,96 +1050,102 @@ h5 {
         height: auto;
         background-size: cover;
     }
-
+    
     .group-wrapper {
         position: absolute;
-        top: 400px;
-        left: 110px;
+        top: 25rem; 
+        left: 6.875rem; 
         width: 90%;
-        height: 270px;
+        height: 16.875rem; 
         max-width: 80%;
         overflow-x: auto;
     }
-    .Yashi-Container img{
-        width: 150px;
-        height: 150px;   
+    
+    .Yashi-Container img {
+        width: 9.375rem; 
+        height: 9.375rem; 
     }
-    .Yashi-Container{
-        top: 116px;
-        left: 80px;
-        width: 500px;
+    
+    .Yashi-Container {
+        top: 7.25rem; 
+        left: 5rem; 
+        width: 31.25rem; 
+    }
+    
+    .Yashi-Container .text-yashi {
+        width: 18.75rem; 
+        top: 1.25rem; 
+        left: 9.375rem; 
+    }
 
-    }
-    .Yashi-Container .text-yashi{
-        width: 300px;
-        top: 20px;
-        left: 150px;
-    }
     .location h2 {
-        top: 350px;
-        left: 120px;
-        font-size: 20px;
-
+        top: 21.875rem; 
+        left: 7.5rem; 
+        font-size: 1.25rem; 
     }
+    
     /* frame bg and width */
-    .frame-container,
+    .frame-container
     .frame-div {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem; 
+        height: 15.625rem; 
         overflow: hidden;
     }
-
+    
     .group-inner {
-        width: 350px;
-        height: 250px;
+        width: 21.875rem; 
+        height: 15.625rem; 
         overflow: hidden;
     }
+    
 
-    /* Frame position */
-    .frame-wrapper1 {
-        left: 380px;
-    }
-    .group-parent2 {
-        left: 760px;
-    }
+/* Frame position */
+.frame-wrapper1 {
+    left: 23.75rem; 
+}
 
-    .frame-wrapper2 {
-        left: 1140px;
-    }
+.group-parent2 {
+    left: 47.5rem; 
+}
 
-    .frame-wrapper3 {
-        left: 1520px;
-    }
+.frame-wrapper2 {
+    left: 71.25rem; 
+}
 
-    .group-parent5 {
-        left: 1900px;
-    }
+.frame-wrapper3 {
+    left: 95rem; 
+}
 
-    .bg-4-image{
-        top: 46px;
-        left: 114px;
+.group-parent5 {
+    left: 118.75rem; 
+}
 
-    }
-    .bg-2-image{
-        top: 25px;
-        left: 114px;
+.bg-4-image {
+    top: 2.875rem; 
+    left: 7.125rem;
+}
 
-    }
-    .bg-3-image{
-        top: 40px;
-        left: 130px;
+.bg-2-image {
+    top: 1.5625rem; 
+    left: 7.125rem; 
+}
 
-    }
-    .bg-5-image{
-        top: 25px;
-        left: 114px;
+.bg-3-image {
+    top: 2.5rem; 
+    left: 8.125rem; 
+}
 
-    }
-    .bg-6-image{
-        top: 40px;
-        left: 114px;
+.bg-5-image {
+    top: 1.5625rem; 
+    left: 7.125rem;
+}
 
-    }
+.bg-6-image {
+    top: 2.5rem; 
+    left: 7.125rem; 
+}
+
+
     .arm-mode h5 {
         left: 4%;
     }
@@ -1134,64 +1169,70 @@ h5 {
     .System-stat .sub1 {
         left: 53%;
     }
+
     .log-out h5 {
         left: 73%;
         width: 5%;
     }
+
     .log-out img {
         left: 90%;
         width: 5%;
     }
 
     .event-log {
-        top: 790px;
-        left: 130px;
+        top: 49.375rem;
+        left: 8.125rem; 
     }
-
+    
     .home-parent {
-        top: 830px;
-        left: 15%;
-        font-size: 12px;
+        top: 51.875rem; 
+        left: 15%; 
+        font-size: 0.75rem; 
     }
-
+    
     .home-parent1 {
-        top: 890px;
-        left: 15%;
-        font-size: 12px;
+        top: 55.625rem; 
+        left: 15%; 
+        font-size: 0.75rem; 
     }
-
+    
     .home-parent2 {
-        top: 880px;
-        left: 57%;
-        font-size: 12px;
-        width: 40%;
+        top: 55rem;
+        left: 57%; 
+        font-size: 0.75rem; 
+        width: 40%; 
     }
-
+    
     .home-parent3 {
-        top: 830px;
-        left: 57%;
-        width: 40%;
-        font-size: 12px;
+        top: 51.875rem; 
+        left: 57%; 
+        width: 40%; 
+        font-size: 0.75rem; 
     }
+    
     .footer {
-        height: 179px;
+        height: 11.1875rem; 
         width: auto;
         max-width: 100%;
         max-height: 100%;
     }
+    
     .side-panal {
-        width: 67px;
-        height: 85%;
-
+        width: 4.1875rem; 
+        height: 85%; 
     }
-    .side-panal a{
-        font-size: 38px;
-        margin-left: 1px;
-        padding: 15px;
+    
+    .side-panal a {
+        font-size: 2.375rem; 
+        margin-left: 0.0625rem; 
+        padding: 0.9375rem; 
     }
-    .side-panal img{
-        width: 20px;
-    } 
+    
+    .side-panal img {
+        width: 1.25rem; 
+    }
+    
 
 }
 
@@ -1212,27 +1253,32 @@ h5 {
         max-width: 80%;
         overflow-x: auto;
     }
-    .Yashi-Container img{
+
+    .Yashi-Container img {
         width: 150px;
-        height: 150px;   
+        height: 150px;
     }
-    .Yashi-Container{
+
+    .Yashi-Container {
         top: 116px;
         left: 80px;
         width: 500px;
 
     }
-    .Yashi-Container .text-yashi{
+
+    .Yashi-Container .text-yashi {
         width: 300px;
         top: 20px;
         left: 150px;
     }
+
     .location h2 {
         top: 350px;
         left: 120px;
         font-size: 20px;
 
     }
+
     /* frame bg and width */
     .frame-container,
     .frame-div {
@@ -1251,6 +1297,7 @@ h5 {
     .frame-wrapper1 {
         left: 380px;
     }
+
     .group-parent2 {
         left: 760px;
     }
@@ -1267,31 +1314,36 @@ h5 {
         left: 1900px;
     }
 
-    .bg-4-image{
+    .bg-4-image {
         top: 46px;
         left: 114px;
 
     }
-    .bg-2-image{
+
+    .bg-2-image {
         top: 25px;
         left: 114px;
 
     }
-    .bg-3-image{
+
+    .bg-3-image {
         top: 40px;
         left: 130px;
 
     }
-    .bg-5-image{
+
+    .bg-5-image {
         top: 25px;
         left: 114px;
 
     }
-    .bg-6-image{
+
+    .bg-6-image {
         top: 40px;
         left: 114px;
 
     }
+
     .arm-mode h5 {
         left: 4%;
     }
@@ -1315,10 +1367,12 @@ h5 {
     .System-stat .sub1 {
         left: 53%;
     }
+
     .log-out h5 {
         left: 73%;
         width: 5%;
     }
+
     .log-out img {
         left: 90%;
         width: 5%;
@@ -1354,25 +1408,29 @@ h5 {
         width: 40%;
         font-size: 12px;
     }
+
     .footer {
         height: 179px;
         width: auto;
         max-width: 100%;
         max-height: 100%;
     }
+
     .side-panal {
         width: 67px;
         height: 85%;
 
     }
-    .side-panal a{
+
+    .side-panal a {
         font-size: 38px;
         margin-left: 1px;
         padding: 15px;
     }
-    .side-panal img{
+
+    .side-panal img {
         width: 20px;
-    } 
+    }
 
 
 }
